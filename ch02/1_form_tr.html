@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device=width, initial-scale=1.0">
+	<title>form</title>
+	<style type="text/css">
+		
+		#id1 {
+			color: #BD70F0;
+		}
+		
+		
+		h1 {
+			text-align: center;
+		}
+		
+		table, th, td {
+			border: 1px solid #A1A0A2;
+			border-collapse: collapse;
+		}
+		
+		th, td {
+			padding: 10px;
+		
+		}
+	
+		thead tr {
+		background-color: #e3f2fd;
+		}
+		
+		
+		
+		
+	</style>	
+</head>
+
+<body>
+	<h6 align="right">✔ 표시 항목은 필수 입력 항목입니다</h6>
+	<h5>📋기본정보</h5>            
+	<form action="./result.html">
+		<table>
+			<tr>
+				<td style="background-color:gray; color:white;" width="150px" align="center">✔이름</td>
+				<td align="left" id="id1">
+					<input type="text" name="name"><br>
+					💬스토리움 이용 시 본인 인증(휴대폰 인증, 아이핀 인증)이 필요할 수 있으므로, 실명으로 적어주시기 바랍니다.
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:gray; color:white;" align="center">✔아이디</td>
+				<td  id="id1">
+					<input type="text" name="id"> 
+					<input type="button" value="✔ 아이디중복확인"><br>
+					💬6~16자까지 영문자(소문자), 숫자 사용 가능합니다.
+				</td>
+				
+			</tr>
+			<tr>
+				<td style="background-color:#E5CFF4; color:white;" align="center">✔비밀번호</td>
+				<td id="id1">
+					<input type="password" name="password"><br>
+					💬8~16자까지 영문자(대소문자), 숫자 및 특수문자 사용 가능합니다.<br>
+					비밀번호는 8~16자의 영문 대/소문자, 숫자, 특수문자중 3개 이상의 조합으로 입력해주세요.<br>
+					3자리 연속 이어지는 문자(또는 숫자), 3자리 같은 문자(또는 숫자), 아이디와 같은 비밀번호는 사용하실 수 없습니다.
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:#E5CFF4; color:white;" align="center">✔비밀번호 확인</td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td style="background-color:#E5CFF4; color:white;" align="center">✔생년월일/성별</td>
+				<td>
+					<input type="date">
+					<input type="radio" name="route">남자<input type="radio" name="route">여자<br>
+					💬반드시 주민등록상 생년월일을 기입해주시기 바랍니다.
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:#E5CFF4; color:white;" align="center">✔이메일</td>
+				<td><input type="text" name="id">@<input type="text" name="id">
+						<select name="email">
+							<option>메일주소선택
+							<option>gmail.com
+							<option>naver.com
+							<option>daum.net
+							<option>hotmail.net
+							<option>nate.com
+							<option>직접 입력
+						</select>
+					<input type="button" value="중복확인 ">
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:#E5CFF4; color:white;" align="center">✔연락처</td>
+				<td>휴대전화 <select name="phon">
+								<option>010<option>011<option>019<option>017<option>016
+							</select> - <input type="text"> - <input type="text"><br>
+					일반전화 <select name="phon">
+								<option>선택<option>02<option>031<option>033<option>054
+							</select> - <input type="text"> - <input type="text"><br>
+					💬연락처는 둘 중 하나만 입력해도 됩니다.		
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:#E5CFF4; color:white;" align="center">
+					✔우편번호
+				</td>
+				<td><input type="text"> 
+					<input type="button" value="🔍︎ 주소검색">
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:gray; color:white;" align="center">✔주소</td>
+				<td><input type="text" size="100%"><br>
+					<input type="text" size="100%">
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:#E5CFF4; color:white;" align="center">정보수신 여부</td>
+				<td><b>서비스 및 이벤트 소식, 지원사업 및 행사 정보 안내 수신여부</b><br>
+					<b>Email수신</b> <input type="radio" name="agree">동의함
+									<input type="radio" name="agree">동의하지 않음<br>
+					<b>SMS수신</b>   <input type="radio" name="agree2">동의함
+									<input type="radio" name="agree2">동의하지 않음
+				</td>
+			</tr>
+		</table>
+		<br>
+		<h5>📋작가정보</h5>
+	 	 <table>
+	 	 	<tr>
+	 	 		<td style="background-color:#E5CFF4; color:white;" width="150px" align="center">✔필명</td>
+	 	 		<td id="id1">
+	 	 			<input type="text" name="name"><br>
+	 	 			💬필명이 없으신 분들은 실명을 등록해 주시기 바랍니다.(작가정보에 노출 될 이름 입니다.)
+	 	 		</td>
+	 	 	</tr>
+	 	 	<tr>
+	 	 		<td style="background-color:#E5CFF4; color:white;" align="center">대표작</td>
+	 	 		<td><input type="text" size="100%"></td>
+	 	 	</tr>
+	 	 	<tr>
+	 	 		<td style="background-color:#E5CFF4; color:white;" align="center">수상내역</td>
+	 	 		<td id="id1">
+	 	 			<textarea rows="10px" cols="100%"></textarea><br>
+	 	 			💬여러 수상내역을 등록 시 콤마(,)로 구분하여 등록해 주시기 바랍니다.	
+	 			</td>
+	 		</tr>
+	 		<tr>
+	 			<td style="background-color:#E5CFF4; color:white;" align="center">주요작품</td>
+	 			<td id="id1">
+	 				<input type="text" placeholder="스토리 제목을 입력하세요"> 
+	 				<input type="text" placeholder="해당 스토리의 역활을 입력하세요""> 
+	 				<input type="button" value="🗑삭제"><br>
+	 				<input type="button" value="➕추가"><br>
+	 				💬본인 참여 주요작품의 제목 및 역할에 대해 등록해 주시기 바랍니다.<br>
+	 				ㅤ( 역할은 메인작가, 공동작가, 보조작가, 각색, 각본 등 본인 역할을 정확히 기재해 주시기 바랍니다.)
+	 			</td>
+	 		</tr>
+	 		<tr>
+	 			<td style="background-color:#E5CFF4; color:white;" align="center">
+	 				✔작가정보공개설정
+ 				</td>
+	 			<td><input type="radio" name="check">공개
+	 				<input type="radio" name="check">비공개
+	 			</td>
+	 		</tr>
+	 	 </table>
+	 	 <br>
+	 	 <center><input type="button" value="&nbsp; ✔&nbsp; 저장 &nbsp;"> 
+	 	 <input type="button" value="&nbsp;&nbsp;&nbsp; 취소 &nbsp;&nbsp;&nbsp;"></center>
+	 	 <br><br>
+	 	 <table>
+	 	 	<tr>
+	 	 		<td style="background-color:#E5CFF4; color:white;" width="160px" align="center">✔ 소속(회사)</td>
+	 	 		<td><input type="text"></td>
+	 	 	</tr>
+	 	 	<tr>
+	 	 		<td style="background-color:#E5CFF4; color:white;" align="center">사업자등록번호</td>
+	 	 		<td><input type="text">-
+	 	 			<input type="text">-
+	 	 			<input type="text">
+ 	 			</td>
+	 	 	</tr>
+	 	 	<tr>
+	 	 		<td style="background-color:#E5CFF4; color:white;" align="center">✔ 사업자등록증(첨부)</td>
+	 	 		<td>
+	 	 			<input type="file"><br>
+	 	 			💬소속(회사)의 사업자등록증을 업로드해주시기바랍니다.(이미지 파일만 업로드 가능/PDF파일 업로드 불가)
+	 	 		</td>
+	 	 	</tr>
+	 	 	<tr>
+	 	 		<td style="background-color:#E5CFF4; color:white;" align="center">✔분야</td>
+	 	 		<td>
+	 	 			<input type="checkbox">영화	 	
+	 	 			<input type="checkbox">방송
+	 	 			<input type="checkbox">출판
+	 	 			<input type="checkbox">공연/예술
+	 	 			<input type="checkbox">투자/배급
+	 	 			<input type="checkbox">캐릭터/애니매이션
+	 	 			<input type="checkbox">기타<input type="text">
+	 	 		</td>	
+	 	 	</tr>
+	 	 	<tr>
+	 	 		<td style="background-color:#E5CFF4; color:white;" align="center">✔직종</td>
+	 	 		<td>
+	 	 			<input type="checkbox">제작자
+	 	 			<input type="checkbox">투자자
+	 	 			<input type="checkbox">에이전트
+	 	 			<input type="checkbox">기타<input type="text"	 	 		
+	 	 		</td>
+	 	 	</tr>
+	 	 	<tr>
+	 	 		<td style="background-color:#E5CFF4; color:white;" align="center">주요경력</td>
+	 	 		<td>
+	 	 			주요경력사항을 등록해 주시기 바랍니다.<br>
+	 	 			💬(기간, 사업내용, 담당업무를 입력해 주시기 바랍니다)<br>
+	 	 			<input type="date"> ~<input type="date"> 
+	 	 			<input type="text" placeholder="사업내용을 입력해주세요">
+	 	 			<input type="text" placeholder="담당업무를 입력해주세요">
+	 	 			<input type="button" value=" 🗑삭제 "><br>
+	 	 			<input type="file" value="➕추가">
+	 	 		</td>
+	 	 	</tr>
+		</table>
+	</form>
+
+</body>
+</html>
