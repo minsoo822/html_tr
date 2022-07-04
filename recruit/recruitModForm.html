@@ -55,18 +55,17 @@
 			<table width="100%">
 				<tr>
 					<td rowspan=6 width="170px" style="color: red;">
-						<i>정장차림의 증명사진<br>넣으시면<br>됩니다.단축키<br>ctrl+N+I	<br>
-						<input type="file">
-					</td>
+						<img alt="강기영" src="image/kang.jpg">
+											</td>
 					<td width="80px" style="background-color: #e3f2fd;">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</td>
-					<td><input type="text" value="김민수" class="aa"></td>
+					<td><input type="text" value="강 기 영" class="aa"></td>
 					<td width="80px" style="background-color: #e3f2fd;">한&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</td>
 					<td><input type="text" value="金 旻 秀" class="aa"></td>
 				</tr>
 				<tr >
 					<!-- <td></td> -->
 					<td style="background-color: #e3f2fd;">영&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</td>
-					<td><input type="text" value="Kim-min soo" class="aa"></td>
+					<td><input type="text" value="Ki Young Kang" class="aa"></td>
 					<td style="background-color: #e3f2fd;">생년월일</td>
 					<td><input type="date"></td>
 				</tr>
@@ -122,7 +121,7 @@
 					<!-- <td></td> -->
 					<td style="background-color: #e3f2fd;">주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</td>
 					<td colspan=3>
-						<input type="text" style="width: 300px;">
+						<input type="text" value="서울특별시 종로5가 3길 레미안 6008호" style="width: 300px;">
 						<input type="button" value="주소 검색">
 					</td>
 		  			<!-- <td></td>
@@ -131,14 +130,11 @@
 				<tr>
 					<!-- <td></td> -->
 					<td style="background-color: #e3f2fd;" >취미생활</td>
-					<td colspan=3 disabled>
-						<input type="text" style="width: 60px;"> , 
-						<input type="text" style="width: 60px;"> , 
-						<input type="text" style="width: 60px;"> , 
-						<input type="text" style="width: 60px;"> ,
-						<input type="text" style="width: 60px;"> ,
-						<input type="text" style="width: 60px;"> ,
-						<input type="text" style="width: 60px;"> 
+					<td colspan=3>
+						<input type="text" value="수영" class="aa" style="width: 60px;"> , 
+						<input type="text" value="낚시" style="width: 60px;"> , 
+						<input type="text" value="등산" style="width: 60px;"> , 
+						<input type="text" value="캠핑" style="width: 60px;">
 						
 						
 					</td>
@@ -290,14 +286,15 @@
 			<input type="button" id="save" value=" 저장 " onclick="here();"></center>
 			</div>
 		</form>
-			<script type="text/javascript">
-			/* valoadation*/
-			function here() {
-			/* alert("nickname: " + document.getElementById("nickname").value); */			
-				alert ("저장 하시겠습니까?");
-				document.getElementById("List").submit();
-			}
 		
+		<script type="text/javascript">
+		/* valoadation*/
+		function here() {
+		/* alert("nickname: " + document.getElementById("nickname").value); */			
+			alert ("저장 하시겠습니까?");
+			document.getElementById("List").submit();
+		}
+	
 		</script>
 	</div>
 </body>
