@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device=width, initial-scale=1.0">
-	<title>입사지원서</title>
+	<title>수정</title>
 	<style type="text/css">
 		h1 {
 			text-align: center;
@@ -32,13 +32,13 @@
 
 <body>
 	<div  style = "padding: 5px 400px 5px 400px;">
-		<form action="./recruitList.html" id="list">
+		<form action="./recruitList.html" id="List">
 			<h1>입사지원서</h1>
 			<table width="100%">
 				<tr>
-					<th width="130px" style="background-color: #e3f2fd;">지원분야</th>
-					<td><input type="text"></td>
-					<td width="140px" style="background-color: #e3f2fd;">경력구분</td>
+					<th>지원분야</th>
+					<td><input type="text" value="웹 개발" class="aa"></td>
+					<th>경력구분</th>
 					<td width="140px">
 						<select style="width: 90px;">
 							<option>선택</option>
@@ -46,7 +46,7 @@
 							<option>경력</option>
 						</select>
 					</td>
-					<td width="140px" style="background-color: #e3f2fd;">희만연봉</td>
+					<th>희만연봉</th>
 					<td width="140px">회사 내규에 따름</td>
 				</tr>
 			</table>
@@ -57,21 +57,21 @@
 					<td rowspan=6 width="170px" style="color: red;">
 						<img alt="강기영" src="image/kang.jpg">
 											</td>
-					<td width="80px" style="background-color: #e3f2fd;">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</td>
+					<th>성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</th>
 					<td><input type="text" value="강 기 영" class="aa"></td>
-					<td width="80px" style="background-color: #e3f2fd;">한&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</td>
-					<td><input type="text" value="金 旻 秀" class="aa"></td>
+					<th>한&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</th>
+					<td><input type="text" value="強 起 榮" class="aa"></td>
 				</tr>
 				<tr >
 					<!-- <td></td> -->
-					<td style="background-color: #e3f2fd;">영&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</td>
+					<th>영&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</th>
 					<td><input type="text" value="Ki Young Kang" class="aa"></td>
-					<td style="background-color: #e3f2fd;">생년월일</td>
+					<th>생년월일</th>
 					<td><input type="date"></td>
 				</tr>
 				<tr>
 					<!-- <td></td> -->
-					<td style="background-color: #e3f2fd;">전화번호</td>
+					<th>전화번호</th>
 					<td>
 						<select>
 							<option>선택
@@ -81,10 +81,10 @@
 							<option>017
 							<option>016
 						</select> -
-						<input type="text" style="width: 60px;" value="4500" class="aa"> -
-						<input type="text" style="width: 60px;" value="0106" class="aa"> 
+						<input type="text" style="width: 60px;" value="1879" class="aa"> -
+						<input type="text" style="width: 60px;" value="5941" class="aa"> 
 					</td>
-					<td style="background-color: #e3f2fd;">비상연락망</td>
+					<th>비상연락망</th>
 					<td>
 						<select>
 							<option>선택</option>
@@ -95,16 +95,16 @@
 							<option>017</option>
 							<option>016</option>
 						</select> -
-						<input type="text" style="width: 60px;"> -
-						<input type="text" style="width: 60px;"> 
+						<input type="text" style="width: 60px;" value="5648" class="aa"> -
+						<input type="text" style="width: 60px;" value="7614" class="aa"> 
 					</td>
 				</tr>
 				<tr>
 					<!-- <td></td> -->
-					<td style="background-color: #e3f2fd;">전자우편</td>
+					<th>전자우편</th>
 					<td>
-						<input type="text" style="width: 90px;" value="minsoo622" class="aa"> @
-						<input type="text" style="width: 60px;"  value="naver.com" class="aa"> 
+						<input type="text" style="width: 70px;" value="rldud2" class="aa"> @
+						<input type="text" style="width: 70px;"  value="naver.com" class="aa"> 
 						<select>
 							<option>선택하기
 							<option value="naver.com">naver.com</option>
@@ -114,14 +114,14 @@
 							
 						</select>
 					</td>
-					<td style="background-color: #e3f2fd;">나&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이</td>
-					<td></td>
+					<th>나&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이</th>
+					<td><input type="text" value="35" id="age" class="aa" style="width: 60px;">세</td>
 				</tr>
 				<tr>
 					<!-- <td></td> -->
-					<td style="background-color: #e3f2fd;">주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</td>
+					<th>주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</th>
 					<td colspan=3>
-						<input type="text" value="서울특별시 종로5가 3길 레미안 6008호" style="width: 300px;">
+						<input type="text" value="서울특별시 종로5가 3길 레미안 6008호" style="width: 300px;" class="aa">
 						<input type="button" value="주소 검색">
 					</td>
 		  			<!-- <td></td>
@@ -129,12 +129,12 @@
 				</tr>
 				<tr>
 					<!-- <td></td> -->
-					<td style="background-color: #e3f2fd;" >취미생활</td>
+					<th>취미생활</th>
 					<td colspan=3>
 						<input type="text" value="수영" class="aa" style="width: 60px;"> , 
-						<input type="text" value="낚시" style="width: 60px;"> , 
-						<input type="text" value="등산" style="width: 60px;"> , 
-						<input type="text" value="캠핑" style="width: 60px;">
+						<input type="text" value="낚시" class="aa" style="width: 60px;"> , 
+						<input type="text" value="등산" class="aa" style="width: 60px;"> , 
+						<input type="text" value="캠핑" class="aa" style="width: 60px;">
 						
 						
 					</td>
@@ -179,7 +179,7 @@
 						<input type="date"> ~
 						<input type="date">
 					</td>
-					<td><input type="text" placeholder="oo 고등학교">
+					<td><input type="text" placeholder="oo 고등학교" value="별가람 고등학교" class="aa">
 						<input type="button" value="찾기"></td>
 					<td>
 						<select>
@@ -191,7 +191,7 @@
 					</td>
 					<td>-</td>
 					<td>
-						<input type="text" placeholder="ex). 서울" style="width: 70px;">
+						<input type="text" placeholder="ex). 서울" value="남양주" class="aa" style="width: 70px;">
 					</td>
 				</tr>
 			</table>
@@ -208,10 +208,12 @@
 						<input type="date">
 					</td>
 					<td>
-						<textarea style="width:200px;"></textarea>
+						<textarea rows="4" cols="33">(주)이젠 아카데미(서울 강남역 본원) 국가기간전략산업직종 훈련
+						</textarea>
 					</td>
 					<td>
-						<textarea style="width:450px;"></textarea>
+						<textarea rows="4" cols="70">Open API활용 자바 안드로이드 웹&앱 개발자 : JAVA, JABASCRIPT, JQERY, JSP, SPRING, HTML, CSS, GIT, bootstrap JSTL AJAX POSTMAIN AWS TOMCAT, 등을 공부하여 자바를 이용한 웹 프로그래밍 역량을 키웠습니다.
+						</textarea>
 					</td>
 				</tr>
 			</table>
@@ -282,7 +284,7 @@
 				</tr>
 			</table>
 			<br>
-			<center><input type="button" value=" 뒤로가기 "> 
+			<center><input type="button" value=" 뒤로가기 "onclick="location='recruitView.html'"> 
 			<input type="button" id="save" value=" 저장 " onclick="here();"></center>
 			</div>
 		</form>

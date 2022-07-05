@@ -28,13 +28,13 @@
 
 <body>
 	<div  style = "padding: 5px 400px 5px 400px;">
-		<form action="recruitList.html" id="list">
+		<form action="./recruitList.html" id="List">
 			<h1>입사지원서</h1>
 			<table width="100%">
 				<tr>
-					<th width="130px" style="background-color: #e3f2fd;">지원분야</th>
+					<th>지원분야</th>
 					<td><input type="text"></td>
-					<td width="140px" style="background-color: #e3f2fd;">경력구분</td>
+					<th>경력구분</th>
 					<td width="140px">
 						<select style="width: 90px;">
 							<option>선택</option>
@@ -42,7 +42,7 @@
 							<option>경력</option>
 						</select>
 					</td>
-					<td width="140px" style="background-color: #e3f2fd;">희만연봉</td>
+					<th>희만연봉</th>
 					<td width="140px">회사 내규에 따름</td>
 				</tr>
 			</table>
@@ -54,21 +54,21 @@
 						<i>정장차림의 증명사진<br>넣으시면<br>됩니다.단축키<br>ctrl+N+I	<br>
 						<input type="file">
 					</td>
-					<td width="80px" style="background-color: #e3f2fd;">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</td>
+					<th>성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</th>
 					<td><input type="text"></td>
-					<td width="80px" style="background-color: #e3f2fd;">한&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</td>
+					<th>한&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</th>
 					<td><input type="text"></td>
 				</tr>
 				<tr >
 					<!-- <td></td> -->
-					<td style="background-color: #e3f2fd;">영&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</td>
+					<th>영&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</th>
 					<td><input type="text"></td>
-					<td style="background-color: #e3f2fd;">생년월일</td>
+					<th>생년월일</td>
 					<td><input type="date"></td>
 				</tr>
 				<tr>
 					<!-- <td></td> -->
-					<td style="background-color: #e3f2fd;">전화번호</td>
+					<th>전화번호</th>
 					<td>
 						<select>
 							<option>선택
@@ -81,7 +81,7 @@
 						<input type="text" style="width: 60px;"> -
 						<input type="text" style="width: 60px;"> 
 					</td>
-					<td style="background-color: #e3f2fd;">비상연락망</td>
+					<th>비상연락망</th>
 					<td>
 						<select>
 							<option>선택</option>
@@ -97,7 +97,7 @@
 				</tr>
 				<tr>
 					<!-- <td></td> -->
-					<td style="background-color: #e3f2fd;">전자우편</td>
+					<th>전자우편</th>
 					<td>
 						<input type="text" style="width: 90px;"> @
 						<input type="text" style="width: 60px;"> 
@@ -110,12 +110,12 @@
 							
 						</select>
 					</td>
-					<td style="background-color: #e3f2fd;">나&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이</td>
+					<th>나&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이</th>
 					<td></td>
 				</tr>
 				<tr>
 					<!-- <td></td> -->
-					<td style="background-color: #e3f2fd;">주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</td>
+					<th>주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</th>
 					<td colspan=3>
 						<input type="text" style="width: 300px;">
 						<input type="button" value="주소 검색">
@@ -125,7 +125,7 @@
 				</tr>
 				<tr>
 					<!-- <td></td> -->
-					<td style="background-color: #e3f2fd;" >취미생활</td>
+					<th>취미생활</th>
 					<td colspan=3 disabled>
 						<input type="text" style="width: 60px;"> , 
 						<input type="text" style="width: 60px;"> , 
@@ -281,10 +281,28 @@
 				</tr>
 			</table>
 			<br>
-			<center><input type="button" value=" 뒤로가기 "> 
-			<input type="button" value=" 저장 "></center>
+			<center><input type="button" value=" 뒤로가기 " onclick="here();";> 
+			<input type="button" value=" 저장 " onclick="here1();"></center>
 			</div>
 		</form>
+		
+		<script type="text/javascript">
+		/* valoadation*/
+		function here() {
+		/* alert("nickname: " + document.getElementById("nickname").value); */			
+			alert ("목록으로 돌아가시겠습니까?");
+			document.getElementById("List").submit();
+		}
+	
+		</script>
+		<script type="text/javascript">
+		/* valoadation*/
+		function here1() {
+		/* alert("nickname: " + document.getElementById("nickname").value); */			
+			alert ("내용을 입력해주세요");
+		}
+	
+		</script>
 	</div>
 </body>
 </html>
