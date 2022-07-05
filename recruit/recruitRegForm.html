@@ -281,11 +281,11 @@
 				</tr>
 			</table>
 			<br>
-			<center><input type="button" value=" 뒤로가기 " onclick="here();";> 
-			<input type="button" value=" 저장 " onclick="here1();"></center>
+			<div align="center">
+				<input type="button" value=" 뒤로가기 "onclick="location='recruitList.html'"> 
+				<input type="button" id="save" value=" 저장 " onclick="here();">
 			</div>
 		</form>
-		
 		<script type="text/javascript">
 		/* valoadation*/
 		function here() {
@@ -293,7 +293,6 @@
 			alert ("목록으로 돌아가시겠습니까?");
 			document.getElementById("List").submit();
 		}
-	
 		</script>
 		<script type="text/javascript">
 		/* valoadation*/
@@ -301,7 +300,6 @@
 		/* alert("nickname: " + document.getElementById("nickname").value); */			
 			alert ("내용을 입력해주세요");
 		}
-	
 		</script>
 	</div>
 </body>

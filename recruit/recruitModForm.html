@@ -32,7 +32,7 @@
 
 <body>
 	<div  style = "padding: 5px 400px 5px 400px;">
-		<form action="./recruitList.html" id="List">
+		<form action="./recruitView.html" id="List">
 			<h1>입사지원서</h1>
 			<table width="100%">
 				<tr>
@@ -169,7 +169,7 @@
 							<option>퇴학</option>
 						</select>
 					</td>
-					<td>oo학과</td>
+					<td>-</td>
 					<td>
 						<input type="text" placeholder="ex). 서울" style="width: 70px;">
 					</td>
@@ -231,10 +231,10 @@
 						<input type="date">
 					</td>
 					<td>
-						<input type="text" style="width: 150px;">
+						<input type="text" style="width: 150px;" value="워드프로세서 1급" class="aa">
 					</td>
 					<td>
-						<input type="text" style="width: 140px;">
+						<input type="text" style="width: 140px;" value="대한상공회의소" class="aa">
 					</td>
 					<td>
 						<textarea style="width:450px;"></textarea>
@@ -245,10 +245,10 @@
 						<input type="date">
 					</td>
 					<td>
-						<input type="text" style="width: 150px;">
+						<input type="text" style="width: 150px;" value="정보처리기사" class="aa">
 					</td>
 					<td>
-						<input type="text" style="width: 140px;">
+						<input type="text" style="width: 140px;" value="한국산업인력공단" class="aa">
 					</td>
 					<td>
 						<textarea style="width:450px;"></textarea>
@@ -266,8 +266,8 @@
 				</tr>
 				<tr>
 					<td><input type="date"></td>
-					<td><input type="text" style="width: 120px;"></td>
-					<td><input type="text" style="width: 120px;"></td>
+					<td><input type="text" style="width: 120px;" placeholder="ex. 한국전력공사"></td>
+					<td><input type="text" style="width: 120px;" placeholder="ex. 회계"></td>
 					<td><textarea style="width:450px;"></textarea></td>
 				</tr>
 				<tr>
@@ -284,19 +284,18 @@
 				</tr>
 			</table>
 			<br>
-			<center><input type="button" value=" 뒤로가기 "onclick="location='recruitView.html'"> 
-			<input type="button" id="save" value=" 저장 " onclick="here();"></center>
+			<div align="center">
+				<input type="button" value=" 뒤로가기 "onclick="location='recruitView.html'"> 
+				<input type="button" id="save" value=" 저장 " onclick="here();">
 			</div>
 		</form>
-		
 		<script type="text/javascript">
-		/* valoadation*/
-		function here() {
-		/* alert("nickname: " + document.getElementById("nickname").value); */			
-			alert ("저장 하시겠습니까?");
-			document.getElementById("List").submit();
-		}
-	
+			/* valoadation*/
+			function here() {
+			/* alert("nickname: " + document.getElementById("nickname").value); */			
+				alert ("저장 하시겠습니까?");
+				document.getElementById("List").submit();
+			}
 		</script>
 	</div>
 </body>
