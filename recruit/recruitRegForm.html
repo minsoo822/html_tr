@@ -28,7 +28,7 @@
 
 <body>
 	<div  style = "padding: 5px 400px 5px 400px;">
-		<form action="./recruitList.html" id="List">
+		<form action="./recruitView.html" id="List">
 			<h1>입사지원서</h1>
 			<table width="100%">
 				<tr>
@@ -282,7 +282,7 @@
 			</table>
 			<br>
 			<div align="center">
-				<input type="button" value=" 뒤로가기 "onclick="here();"> 
+				<input type="button" value=" 목록으로 가기 " onclick="location='recruitList.html'"> 
 				<input type="button" id="save" value=" 저장 " onclick="here1();">
 			</div>
 		</form>
@@ -291,7 +291,7 @@
 		function here() {
 		/* alert("nickname: " + document.getElementById("nickname").value); */			
 			alert ("목록으로 돌아가시겠습니까?");
-			document.getElementById("List").submit();
+			
 		}
 		</script>
 		<script type="text/javascript">
@@ -299,6 +299,7 @@
 		function here1() {
 		/* alert("nickname: " + document.getElementById("nickname").value); */			
 			alert ("내용을 입력해주세요");
+			document.getElementById("List").submit();
 		}
 		</script>
 	</div>
